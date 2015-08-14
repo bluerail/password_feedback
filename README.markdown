@@ -29,5 +29,5 @@ We assume that formtastic & formtastic-bootstrap are being used:
 - By default, we only do a client-side check with `zxcvbn.js`.
 - If the `zxcvbn-ruby` gem is installed, we also do a server-side check.
 - The following settings are taken into account, if they're set:
-  `Devise.config.password_length`, Devise.config.min_password_score` (used by
+  `Devise.config.password_length`, `Devise.config.min_password_score` (used by
   `devise_zxcvbn`).
