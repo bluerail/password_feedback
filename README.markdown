@@ -3,22 +3,34 @@
 Interactive password feedback.
 
 - We include [zxcvbn.js](https://github.com/dropbox/zxcvbn).
-- We can optionally also do a server-side check with [zxcvbn-ruby](https://rubygems.org/gems/zxcvbn-ruby).
-- You can add a model validation with [devise_zxcvbn](https://rubygems.org/gems/devise_zxcvbn).
+- We can optionally also do a server-side check through AJAX, for example with
+  [zxcvbn-ruby](https://rubygems.org/gems/zxcvbn-ruby) and/or
+  [devise_zxcvbn](https://rubygems.org/gems/devise_zxcvbn)
+
 
 Usage
 =====
+Include the [JavaScript code](https://github.com/bluerail/password_feedback/tree/master/lib/assets/javascripts)
+and the [stylesheet](https://github.com/bluerail/password_feedback/tree/master/lib/assets/stylesheets).
+
+
+
+
+Ruby on Rails installation
+--------------------------
+This is packaged as a Ruby gem ready to use in a Rails app.
+
 Add to your `Gemfile`
 
-    gem 'ajax_status'
+    gem 'password_feedback'
 
 Add to your `application.js`:
 
-    // =require ajax_status
+    // =require password_feedback
 
 And to your `application.css`:
 
-    /* =require ajax_status */
+    /* =require password_feedback */
 
 We assume that formtastic & formtastic-bootstrap are being used:
 
